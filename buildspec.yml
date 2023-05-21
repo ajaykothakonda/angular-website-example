@@ -12,5 +12,5 @@ phases:
 
 artifacts:
   files:
-    - '*/my-file-3.txt'
+    - '**/*'
   base-directory: dist/websitePractise
