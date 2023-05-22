@@ -12,8 +12,9 @@ phases:
     commands:
       - npm run build
       - dir dist/websitePractise
-      - zip -r buildasset.zip dist/websitePractise/
+      #- zip -r buildasset.zip dist/websitePractise/
 
 artifacts:
   files:
-    - '*.zip'
+    - '**/*'
+  base-directory: dist/websitePractise
