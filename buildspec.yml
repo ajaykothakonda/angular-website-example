@@ -7,7 +7,7 @@ phases:
       - npm ci
   pre_build:
     commands:
-      - yum install zip
+      - apt install zip
   build:
     commands:
       - npm run build
