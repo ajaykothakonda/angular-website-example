@@ -5,12 +5,15 @@ phases:
     commands:
       - npm install -g npm
       - npm ci
+  pre_build:
+    commands:
+      - yum install zip
   build:
     commands:
       - npm run build
       - dir dist/websitePractise
+      - zip -r buildasset.zip dist/websitePractise/
 
 artifacts:
   files:
-    - '**/*'
-  base-directory: dist/websitePractise
+    - '*.zip'
