@@ -16,4 +16,5 @@ phases:
 
 artifacts:
   files:
-    - '*.zip'
+    - '**/*'
+  base-directory: dist/websitePractise
